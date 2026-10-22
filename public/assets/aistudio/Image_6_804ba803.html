@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#233144", "tertiary": "#b9c7e0", "primary-container": "#10b981", "surface-container-lowest": "#020e21", "error": "#ffb4ab", "secondary": "#95d4ac", "tertiary-container": "#95a4bb", "surface-container-high": "#1d2a3e", "outline": "#86948a", "on-tertiary-container": "#2c3a4e", "surface-bright": "#2d3a4e", "surface-tint": "#4edea3", "primary-fixed": "#6ffbbe", "outline-variant": "#3c4a42", "on-secondary-fixed": "#002111", "background": "#061426", "inverse-primary": "#006c49", "error-container": "#93000a", "on-primary": "#003824", "on-secondary": "#003920", "on-primary-container": "#00422b", "on-error-container": "#ffdad6", "secondary-fixed-dim": "#95d4ac", "on-background": "#d6e3fe", "inverse-on-surface": "#243145", "on-tertiary-fixed": "#0d1c2f", "surface-container-highest": "#28354a", "tertiary-fixed-dim": "#b9c7e0", "on-tertiary-fixed-variant": "#3a485c", "tertiary-fixed": "#d5e3fd", "secondary-container": "#0f5132", "surface-dim": "#061426", "primary-fixed-dim": "#4edea3", "surface": "#061426", "on-secondary-fixed-variant": "#0f5132", "on-surface-variant": "#bbcabf", "on-secondary-container": "#84c39b", "inverse-surface": "#d6e3fe", "surface-variant": "#28354a", "on-primary-fixed": "#002113", "on-error": "#690005", "secondary-fixed": "#b0f1c7", "on-primary-fixed-variant": "#005236", "on-surface": "#d6e3fe", "surface-container-low": "#0e1c2f", "surface-container": "#132033", "primary": "#4edea3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-sm": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-lg-mobile": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "display": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "display-mobile": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "display": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-[0_0_15px_rgba(16,185,129,0.15)]"><span class="material-symbols-outlined text-[24px]">verified_user</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">JEYSON TORRES T.</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">INGENIERÍA FORENSE &amp; DERECHO</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-space-xs bg-surface-container-lowest rounded-xl" data-active-classes="bg-surface-container-high text-primary font-title-md rounded-xl shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)]"><a class="font-title-md text-title-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="perfil" href="#">Perfil</a><a class="font-title-md text-title-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="ciberseguridad" href="#">Ciberseguridad</a><a class="font-title-md text-title-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="rincon-normativo" href="#">Rincón Normativo</a><a class="font-title-md text-title-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="analisis-juridico" href="#">Análisis Jurídico</a><a class="font-title-md text-title-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="simuladores" href="#">Simuladores</a></nav><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs bg-primary-container hover:bg-secondary-container text-on-primary font-title-md text-title-md px-space-md py-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(16,185,129,0.3)] transition-all" data-path="admin-portal" href="#"><span class="material-symbols-outlined text-[18px]">shield_lock</span><span>Admin</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Subtle Gradient Ambient Backdrop -->
+<div class="relative w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin pb-space-xl">
+<!-- Hero / Title Module -->
+<section class="relative pt-space-lg pb-space-xl flex flex-col gap-space-md">
+<!-- Glow decoration -->
+<div class="absolute -top-10 left-1/4 w-96 h-32 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Jurisprudencia Especializada • Dogmática Digital
+        </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm hidden md:inline">RFC-3161 • ISO/IEC 27037</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col max-w-4xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Análisis Jurisprudencial &amp; Dogmática Judicial
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs">
+            Fichas técnicas de jurisprudencia relevante en materia de valoración de prueba digital, derechos fundamentales y ciberseguridad judicial.
+          </p>
+</div>
+<!-- Live Counter Stat Indicator -->
+<div class="flex items-center gap-space-md self-start md:self-auto bg-surface-container-high px-space-md py-space-sm rounded-xl shadow-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Providencias Indexadas</span>
+<span class="font-headline-sm text-headline-sm text-primary">148 Actas</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">balance</span>
+</div>
+</div>
+</section>
+<!-- Search & Advanced Filter Architecture -->
+<section class="bg-surface-container rounded-xl p-space-lg shadow-md mb-space-xl">
+<div class="flex flex-col gap-space-md">
+<!-- Search Input Bar with Terminal Feel -->
+<div class="flex flex-col md:flex-row gap-space-md items-center">
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-11 pl-11 pr-space-md bg-surface-container-low text-on-surface placeholder:text-on-surface-variant rounded-xl focus:outline-none focus:ring-1 focus:ring-primary font-body-md text-body-md" id="jurisprudence-search" placeholder="Buscar por número de providencia, magistrado o descriptor técnico..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs w-full md:w-auto">
+<button class="w-full md:w-auto flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container-high text-on-surface hover:text-primary transition-all font-title-md text-title-md" id="reset-filters-btn">
+<span class="material-symbols-outlined text-[18px]">filter_alt_off</span>
+<span>Limpiar Filtros</span>
+</button>
+<button class="w-full md:w-auto flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-primary text-on-primary font-title-md text-title-md shadow-[0_4px_16px_rgba(16,185,129,0.25)] transition-all">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Ejecutar Consulta</span>
+</button>
+</div>
+</div>
+<!-- Filter Selectors Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md pt-space-xs">
+<!-- Alta Corte Filter -->
+<div class="md:col-span-5 flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Alta Corte de Procedencia</label>
+<div class="flex flex-wrap gap-space-xs" id="filter-corte-group">
+<button class="filter-corte-chip active px-space-sm py-1.5 rounded-lg bg-surface-container-high text-primary font-body-sm text-body-sm transition-colors" data-corte="all">Todas</button>
+<button class="filter-corte-chip px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" data-corte="constitucional">Corte Constitucional</button>
+<button class="filter-corte-chip px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" data-corte="suprema">Corte Suprema (Penal)</button>
+<button class="filter-corte-chip px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" data-corte="estado">Consejo de Estado</button>
+</div>
+</div>
+<!-- Año de Emisión Slider / Selector -->
+<div class="md:col-span-3 flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Año de Emisión</label>
+<span class="font-label-sm text-label-sm text-primary" id="year-display">2019 – 2025</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">2019</span>
+<input class="w-full accent-primary h-2 bg-surface-container-lowest rounded-lg cursor-pointer" id="year-range" max="2025" min="2019" type="range" value="2019"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2025</span>
+</div>
+</div>
+<!-- Descriptor Temático Quick Badges -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Descriptores Principales</label>
+<div class="flex flex-wrap gap-space-xs">
+<button class="topic-filter-btn px-space-sm py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-secondary font-label-sm text-label-sm transition-all" data-term="whatsapp">
+                #WhatsApp Como Prueba
+              </button>
+<button class="topic-filter-btn px-space-sm py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-secondary font-label-sm text-label-sm transition-all" data-term="allanamiento">
+                #Allanamiento Sistemas
+              </button>
+<button class="topic-filter-btn px-space-sm py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-secondary font-label-sm text-label-sm transition-all" data-term="isp">
+                #Responsabilidad ISP
+              </button>
+<button class="topic-filter-btn px-space-sm py-1 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-secondary font-label-sm text-label-sm transition-all" data-term="firma">
+                #Firma Electrónica
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Workspace Layout: Fichas (Col 8) + Forensic Metric Insights (Col 4) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+<!-- FICHAS JURISPRUDENCIALES STREAM (8 COLUMNS) -->
+<main class="xl:col-span-8 flex flex-col gap-space-xl">
+<!-- CARD 1: SENTENCIA T-043/20 -->
+<article class="jurisprudence-card relative bg-surface-container-high rounded-xl p-space-lg shadow-xl overflow-hidden flex flex-col gap-space-md group" data-court="constitucional" data-tags="whatsapp pantallazos evidencia digital">
+<!-- Top Accent Forensic Rail -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<!-- Metadata Header Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+                DOCTRINA CONSTITUCIONAL VINCULANTE
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Radicado: T-7.512.809</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>SHA-256 Validado</span>
+</div>
+</div>
+<!-- Providencia Title & Court -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Sentencia T-043/20</h2>
+<span class="font-title-md text-title-md text-secondary">Corte Constitucional de Colombia</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Sala Séptima de Revisión</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Magistrada Ponente:</span>
+<span>Dra. Cristina Pardo Schlesinger</span>
+<span class="text-outline-variant">•</span>
+<span>Año 2020</span>
+</div>
+</div>
+<!-- Modular Blocks Layout: Hechos & Ratio -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Síntesis de Hechos -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">fact_check</span>
+<span>Síntesis de Hechos Relevantes</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Aportación exclusiva de capturas de pantalla estáticas de conversaciones en la plataforma WhatsApp como prueba testimonial-documental dentro de un trámite disciplinario administrativo sancionatorio. El investigado tachó de apócrifas las imágenes impresas ante la ausencia del dispositivo emisor/receptor.
+              </p>
+</div>
+<!-- Ratio Decidendi -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+<span>Ratio Decidendi</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Establece con precisión dogmática que las impresiones o capturas simples corresponden a copias informales de fácil manipulación. Para acreditar plenamente su autenticidad e integridad procesal, se exige el análisis o cotejo pericial forense del soporte electrónico original cuando medien tachas o controversia procesal explícita.
+              </p>
+</div>
+</div>
+<!-- Comentario Crítico Dogmático (Full Width Inset) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Comentario Crítico Forense-Dogmático (Jeyson Torres)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">EST-SYS: RFC 3227</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “El precedente ratifica el vacío de fiabilidad del 'pantallazo simple' (screenshot). Desde la óptica de la ingeniería forense, una imagen PNG/JPEG omite metadatos esenciales EXIF del protocolo XMP, tokens de sesión de base de datos SQLite (<code class="bg-surface-container px-1 rounded text-primary">msgstore.db</code>) y la huella criptográfica del intercambio. La obligatoriedad pericial de extracción física o lógica bit-a-bit con hash SHA-256 es la única barrera válida frente a herramientas de simulación visual tipo FakerChat.”
+            </p>
+</div>
+<!-- Hash and Action Buttons Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs font-mono font-body-sm text-body-sm text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-lg w-full sm:w-auto overflow-hidden">
+<span class="text-primary font-bold">SHA-256:</span>
+<span class="truncate max-w-[260px] md:max-w-[320px]">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+<button class="text-on-surface-variant hover:text-primary transition-colors ml-auto" title="Copiar Hash">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container hover:bg-surface-bright text-on-surface transition-all font-title-md text-title-md">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar Ficha en PDF</span>
+</button>
+<a class="flex-1 sm:flex-none flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-secondary-container transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span>Ver Providencia Completa</span>
+</a>
+</div>
+</div>
+</article>
+<!-- CARD 2: SENTENCIA SP-1284-2023 -->
+<article class="jurisprudence-card relative bg-surface-container-high rounded-xl p-space-lg shadow-xl overflow-hidden flex flex-col gap-space-md group" data-court="suprema" data-tags="allanamiento celulares flagrancia autoincriminacion">
+<!-- Top Accent Forensic Rail -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary-container"></div>
+<!-- Metadata Header Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                PRECEDENTE PENAL DE LEGALIDAD PROBATORIA
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Radicado: SP-54910</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>SHA-256 Validado</span>
+</div>
+</div>
+<!-- Providencia Title & Court -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Sentencia SP-1284-2023</h2>
+<span class="font-title-md text-title-md text-secondary">Corte Suprema de Justicia</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Sala de Casación Penal</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Magistrado Ponente:</span>
+<span>Dr. Diego Eugenio Corredor Beltrán</span>
+<span class="text-outline-variant">•</span>
+<span>Año 2023</span>
+</div>
+</div>
+<!-- Modular Blocks Layout: Hechos & Ratio -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Síntesis de Hechos -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">fact_check</span>
+<span>Síntesis de Hechos Relevantes</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Extracción coercitiva inmediata de datos en equipos telefónicos inteligentes incautados durante captura en flagrancia. La policía judicial procedió a inspeccionar las aplicaciones de mensajería instantánea sin control previo del Juez de Control de Garantías, alegando urgencia probatoria y conservación del soporte.
+              </p>
+</div>
+<!-- Ratio Decidendi -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+<span>Ratio Decidendi</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                La Sala Penal determinó que la intimidad digital resguardada en sistemas telemáticos goza de reserva judicial reforzada. Ni la flagrancia ni la mera incautación facultan el acceso al contenido cifrado o bases de datos internas del terminal sin orden judicial previa fundada o autorización libre, expresa e informada del titular.
+              </p>
+</div>
+</div>
+<!-- Comentario Crítico Dogmático (Full Width Inset) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Comentario Crítico Forense-Dogmático (Jeyson Torres)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">ENCRYPT-STD: AES-256</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “Esta providencia consolida el principio de exclusión probatoria del artículo 29 C.P. En el campo pericial informático es vital diferenciar el resguardo pasivo de la evidencia (bloqueo mediante bolsa Faraday para evitar borrado remoto / wipe) del registro activo del contenedor. Además, abre el debate procesal contemporáneo sobre obligar o no a desbloquear biometría (Face ID / Huella) vis-à-vis el ingreso de passphrase alfanumérica, donde la primera podría configurarse como evidencia real y la segunda como testimonio no autoincriminatorio.”
+            </p>
+</div>
+<!-- Hash and Action Buttons Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs font-mono font-body-sm text-body-sm text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-lg w-full sm:w-auto overflow-hidden">
+<span class="text-secondary font-bold">SHA-256:</span>
+<span class="truncate max-w-[260px] md:max-w-[320px]">98a1fc40879b29cbbf1002243e8bb81c3f56a3e110c4d928bcda9132145bc098</span>
+<button class="text-on-surface-variant hover:text-primary transition-colors ml-auto" title="Copiar Hash">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container hover:bg-surface-bright text-on-surface transition-all font-title-md text-title-md">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar Ficha en PDF</span>
+</button>
+<a class="flex-1 sm:flex-none flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-secondary-container transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span>Ver Providencia Completa</span>
+</a>
+</div>
+</div>
+</article>
+<!-- CARD 3: SENTENCIA C-604/19 -->
+<article class="jurisprudence-card relative bg-surface-container-high rounded-xl p-space-lg shadow-xl overflow-hidden flex flex-col gap-space-md group" data-court="constitucional" data-tags="metadatos vigilancia masiva retencion datos">
+<!-- Top Accent Forensic Rail -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<!-- Metadata Header Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">shield_with_heart</span>
+                CONTROL ABSTRACTO DE CONSTITUCIONALIDAD
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Radicado: D-12984</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>SHA-256 Validado</span>
+</div>
+</div>
+<!-- Providencia Title & Court -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Sentencia C-604/19</h2>
+<span class="font-title-md text-title-md text-secondary">Corte Constitucional de Colombia</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Sala Plena</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Magistrada Sustanciadora:</span>
+<span>Dra. Gloria Stella Ortiz Delgado</span>
+<span class="text-outline-variant">•</span>
+<span>Año 2019</span>
+</div>
+</div>
+<!-- Modular Blocks Layout: Hechos & Ratio -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Síntesis de Hechos -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">fact_check</span>
+<span>Contexto y Cuestionamiento</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Demanda de inconstitucionalidad contra disposiciones normativas del Código de Policía y normas de telecomunicaciones que habilitaban a los organismos estatales la recopilación, acceso y retención masiva indiscriminada del historial de conexiones IP, geolocalización y celdas telefónicas sin intervención judicial previa.
+              </p>
+</div>
+<!-- Ratio Decidendi -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+<span>Ratio Decidendi</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Los metadatos asociados a las comunicaciones (duración, origen, destino, georreferenciación y registro de antenas) gozan del mismo grado de protección jurídica que el contenido material de la comunicación. Su acopio generalizado y prospectivo lesiona de manera desproporcionada la autodeterminación informativa y la intimidad.
+              </p>
+</div>
+</div>
+<!-- Comentario Crítico Dogmático (Full Width Inset) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col gap-space-xs shadow-inner">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Comentario Crítico Forense-Dogmático (Jeyson Torres)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">PROTOCOL: CDR / PCAP DATA</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
+              “Esta providencia sienta un hito indispensable para la ingeniería de ciberseguridad forense: desmonta el falaz argumento de que 'el metadato es un dato técnico accesorio que no identifica a la persona'. Un registro CDR (Call Detail Record) o una traza NetFlow combinada revela patrones de vida más íntimos e intrusivos que una grabación de voz aislada. La trazabilidad probatoria de tráfico no puede adquirirse por meras peticiones administrativas.”
+            </p>
+</div>
+<!-- Hash and Action Buttons Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs font-mono font-body-sm text-body-sm text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-lg w-full sm:w-auto overflow-hidden">
+<span class="text-primary font-bold">SHA-256:</span>
+<span class="truncate max-w-[260px] md:max-w-[320px]">3b4f179c32d98a287be1299dfc4412e091564883bbfa834011d88251e60f097a</span>
+<button class="text-on-surface-variant hover:text-primary transition-colors ml-auto" title="Copiar Hash">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container hover:bg-surface-bright text-on-surface transition-all font-title-md text-title-md">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar Ficha en PDF</span>
+</button>
+<a class="flex-1 sm:flex-none flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary font-title-md text-title-md hover:bg-secondary-container transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span>Ver Providencia Completa</span>
+</a>
+</div>
+</div>
+</article>
+</main>
+<!-- FORENSIC METRICS & TENDENCY SIDEBAR (4 COLUMNS) -->
+<aside class="xl:col-span-4 flex flex-col gap-space-lg w-full">
+<!-- Dogmatic Trend Widget Card -->
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">monitoring</span>
+<span>Tendencia Dogmática de Fallos</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-primary font-label-sm text-label-sm">2020-2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Criterio Probatorio Predominante</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Comportamiento estadístico de las providencias judiciales frente a la admisión y valoración de elementos materiales probatorios telemáticos.
+          </p>
+<!-- SVG Donut Chart for Dogmatic Metrics -->
+<div class="relative flex items-center justify-center py-space-md">
+<svg class="w-48 h-48 -rotate-90" viewbox="0 0 160 160">
+<!-- Ring Track -->
+<circle class="text-surface-container-lowest" cx="80" cy="80" fill="none" r="62" stroke="currentColor" stroke-width="14"></circle>
+<!-- Rigor Pericial Requerido (62%) -> 2 * PI * 62 = 389.55 -> dasharray: 241 390 -->
+<circle class="text-primary transition-all duration-700" cx="80" cy="80" fill="none" r="62" stroke="currentColor" stroke-dasharray="241 390" stroke-linecap="round" stroke-width="14"></circle>
+<!-- Admisión Prima Facie Cautelar (25%) -> dasharray: 97 390, offset -241 -->
+<circle class="text-secondary transition-all duration-700" cx="80" cy="80" fill="none" r="62" stroke="currentColor" stroke-dasharray="97 390" stroke-dashoffset="-241" stroke-linecap="round" stroke-width="14"></circle>
+<!-- Ilicitud / Exclusión Probatoria (13%) -> dasharray: 52 390, offset -338 -->
+<circle class="text-tertiary transition-all duration-700" cx="80" cy="80" fill="none" r="62" stroke="currentColor" stroke-dasharray="51 390" stroke-dashoffset="-338" stroke-linecap="round" stroke-width="14"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">62%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Rigor Pericial</span>
+</div>
+</div>
+<!-- Trend Legend Matrix -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Exigencia de Peritaje Bit-a-Bit</span>
+</div>
+<span class="font-mono font-semibold text-primary font-body-sm text-body-sm">62% (92 fallos)</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Valoración Indiciaria Libre</span>
+</div>
+<span class="font-mono font-semibold text-secondary font-body-sm text-body-sm">25% (37 fallos)</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Exclusión Regla de Oro Art. 29</span>
+</div>
+<span class="font-mono font-semibold text-tertiary font-body-sm text-body-sm">13% (19 fallos)</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest text-on-surface-variant font-body-sm text-body-sm flex gap-space-sm items-start">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">info</span>
+<p>
+<strong class="text-on-surface">Conclusión Dogmática:</strong> Las altas cortes se distancian aceleradamente de la tesis de los "pantallazos auténticos por sí mismos", consolidando el requisito de integridad pericial verificable.
+            </p>
+</div>
+</div>
+<!-- Perito Consultor Card with Forensic Authority -->
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[32px]">military_tech</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Jeyson Torres Torres</span>
+<span class="font-label-sm text-label-sm text-primary uppercase">Criterio Pericial en Litigio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sistemas • Criminalística • Derecho</span>
+</div>
+</div>
+<!-- Inline Technical Sparkline Chart -->
+<div class="flex flex-col gap-space-xs bg-surface-container p-space-md rounded-xl">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span>Evolución de Cuestionamientos Periciales</span>
+<span class="text-primary font-bold">+44% vs 2022</span>
+</div>
+<!-- Sparkline Graphic -->
+<svg class="w-full h-12 text-primary" preserveaspectratio="none" viewbox="0 0 200 48">
+<defs>
+<lineargradient id="sparkGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="currentColor" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="currentColor" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M 0,40 Q 30,35 60,38 T 120,24 T 160,12 T 200,4 L 200,48 L 0,48 Z" fill="url(#sparkGradient)"></path>
+<path d="M 0,40 Q 30,35 60,38 T 120,24 T 160,12 T 200,4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="200" cy="4" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Protocolos Procesales de Referencia</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-surface-container font-mono text-[11px] text-secondary">ISO 27037:2012</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container font-mono text-[11px] text-secondary">Ley 527 de 1999</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container font-mono text-[11px] text-secondary">CGP Art. 247</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container font-mono text-[11px] text-secondary">CPP Art. 257</span>
+</div>
+</div>
+<button class="w-full mt-space-xs flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container hover:bg-surface-bright text-primary font-title-md text-title-md transition-all">
+<span class="material-symbols-outlined text-[20px]">help_center</span>
+<span>Solicitar Concepto Pre-Procesal</span>
+</button>
+</div>
+</aside>
+</div>
+</div>
+<!-- Client-side Interactive Filter Script -->
+<script>
+    (function initJurisprudenceFilters() {
+      const searchInput = document.getElementById('jurisprudence-search');
+      const yearRange = document.getElementById('year-range');
+      const yearDisplay = document.getElementById('year-display');
+      const corteButtons = document.querySelectorAll('.filter-corte-chip');
+      const topicButtons = document.querySelectorAll('.topic-filter-btn');
+      const resetBtn = document.getElementById('reset-filters-btn');
+      const cards = document.querySelectorAll('.jurisprudence-card');
+
+      let currentCorte = 'all';
+
+      // Year slider change
+      if (yearRange && yearDisplay) {
+        yearRange.addEventListener('input', (e) => {
+          yearDisplay.textContent = `${e.target.value} – 2025`;
+          filterCards();
+        });
+      }
+
+      // High Court filter buttons
+      corteButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          corteButtons.forEach(b => {
+            b.classList.remove('bg-surface-container-high', 'text-primary');
+            b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+          btn.classList.add('bg-surface-container-high', 'text-primary');
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          currentCorte = btn.dataset.corte;
+          filterCards();
+        });
+      });
+
+      // Quick topic tag buttons
+      topicButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (searchInput) {
+            searchInput.value = btn.dataset.term;
+            filterCards();
+          }
+        });
+      });
+
+      // Search input handler
+      if (searchInput) {
+        searchInput.addEventListener('input', () => {
+          filterCards();
+        });
+      }
+
+      // Reset filter button
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          if (searchInput) searchInput.value = '';
+          if (yearRange) {
+            yearRange.value = 2019;
+            yearDisplay.textContent = '2019 – 2025';
+          }
+          currentCorte = 'all';
+          corteButtons.forEach((b, idx) => {
+            if (idx === 0) {
+              b.classList.add('bg-surface-container-high', 'text-primary');
+              b.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+            } else {
+              b.classList.remove('bg-surface-container-high', 'text-primary');
+              b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+            }
+          });
+          filterCards();
+        });
+      }
+
+      function filterCards() {
+        const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+        cards.forEach(card => {
+          const court = card.dataset.court || '';
+          const tags = card.dataset.tags || '';
+          const text = card.textContent.toLowerCase();
+
+          const matchesCorte = (currentCorte === 'all' || court === currentCorte);
+          const matchesQuery = query === '' || text.includes(query) || tags.includes(query);
+
+          if (matchesCorte && matchesQuery) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-auto"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-xl flex flex-col gap-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter"><div class="md:col-span-6 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">security</span><span class="font-headline-sm text-headline-sm text-on-surface">JEYSON TORRES TORRES</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Ingeniero de Sistemas • Investigador Judicial • Estudiante de Derecho. Práctica especializada en informática forense, preservación de cadena de custodia digital, auditoría de vulnerabilidades y argumentación probatoria en litigio tecnológico.</p><div class="flex items-center gap-space-sm mt-space-xs"><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>INTEGRIDAD FORENSE SHA-256 VERIFICADA</span></div></div></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Repositorio Institucional</span><nav class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Dictámenes Periciales</a><a class="hover:text-primary transition-colors" href="#">Cadena de Custodia Digital</a><a class="hover:text-primary transition-colors" href="#">Protocolos RFC 3227 &amp; ISO 27037</a><a class="hover:text-primary transition-colors" href="#">Artículos de Doctrina Informática</a></nav></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Aviso Pericial &amp; Normativo</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Los análisis técnicos, dictámenes y simulaciones expuestos se estructuran conforme al principio de legalidad probatoria. Las opiniones constituyen criterio consultivo no vinculante sin previo nombramiento judicial.</p></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-lg"><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">© 2025 Jeyson Torres Torres. Todos los derechos reservados.</p><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">lock</span><span>Entorno Criptográfico Resguardado</span></span><span class="hidden md:inline text-outline-variant">•</span><span>CO Bar &amp; Forensic Registry</span></div></div></div></footer></body></html>

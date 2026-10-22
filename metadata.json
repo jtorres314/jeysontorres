@@ -1,0 +1,6 @@
+{
+  "name": "JEYSON TORRES T. - Ingeniería Forense & Derecho",
+  "description": "Plataforma de Ingeniería Forense, Ciberseguridad, Análisis Jurídico, Repositorio Normativo y Simuladores Procesales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

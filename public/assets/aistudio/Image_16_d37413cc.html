@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#003824","primary":"#4edea3","surface-container-low":"#0e1c2f","on-surface-variant":"#bbcabf","on-secondary-fixed-variant":"#0f5132","on-tertiary":"#233144","tertiary":"#b9c7e0","on-secondary-fixed":"#002111","on-error-container":"#ffdad6","surface-bright":"#2d3a4e","surface-container-highest":"#28354a","on-surface":"#d6e3fe","on-tertiary-fixed":"#0d1c2f","on-primary-container":"#00422b","error":"#ffb4ab","surface-tint":"#4edea3","inverse-primary":"#006c49","on-secondary-container":"#84c39b","surface-dim":"#061426","surface":"#061426","primary-container":"#10b981","inverse-on-surface":"#243145","tertiary-fixed-dim":"#b9c7e0","tertiary-container":"#95a4bb","surface-container-high":"#1d2a3e","secondary-container":"#0f5132","on-tertiary-fixed-variant":"#3a485c","on-background":"#d6e3fe","on-tertiary-container":"#2c3a4e","on-primary-fixed":"#002113","secondary-fixed":"#b0f1c7","outline-variant":"#3c4a42","secondary":"#95d4ac","on-error":"#690005","primary-fixed-dim":"#4edea3","primary-fixed":"#6ffbbe","inverse-surface":"#d6e3fe","on-secondary":"#003920","surface-variant":"#28354a","surface-container-lowest":"#020e21","secondary-fixed-dim":"#95d4ac","outline":"#86948a","surface-container":"#132033","on-primary-fixed-variant":"#005236","error-container":"#93000a","background":"#061426","tertiary-fixed":"#d5e3fd"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter-sm":"1rem","margin":"3rem","gutter":"1.5rem","space-xl":"2.5rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem"},fontFamily:{"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},fontSize:{"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"display":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[22px]">shield_with_house</span><span class="font-label-md text-label-md tracking-wider text-on-surface uppercase">JEYSON TORRES T. // ADMIN CONSOLE</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container text-on-secondary-container"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm tracking-wider uppercase text-primary">SESIÓN AUTENTICADA ROOT • TLS 1.3 / PGP SIGNED</span></div></div><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm rounded-lg hover:bg-surface-container-high" data-path="public-portal" href="#">Volver al Sitio Público →</a><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col items-end hidden md:flex"><span class="font-label-md text-label-md text-on-surface leading-tight">Jeyson Torres T.</span><span class="font-label-sm text-label-sm uppercase px-space-xs py-0.5 rounded bg-secondary-container text-primary font-bold leading-none mt-0.5">Superadmin</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex flex-col justify-between py-space-md overflow-y-auto"><div class="px-space-md"><div class="px-space-sm py-space-xs mb-space-sm text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Operaciones Forenses</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg shadow-sm" data-path="dashboard-general" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span>Dashboard General</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="gestion-de-contenidos-cms" href="#"><span class="material-symbols-outlined text-[20px]">article</span>Gestión de Contenidos (CMS)</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="simuladores-preguntas" href="#"><span class="material-symbols-outlined text-[20px]">quiz</span>Simuladores &amp; Preguntas</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="requerimientos-periciales" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span>Requerimientos Periciales</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="auditoria-logs" href="#"><span class="material-symbols-outlined text-[20px]">terminal</span>Auditoría &amp; Logs</a></nav></div><div class="px-space-md pt-space-md"><div class="p-space-sm rounded-xl bg-surface-container-lowest flex flex-col gap-space-xs"><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span>NODE ENCRYPTION</span><span class="text-primary font-bold">SHA-512</span></div><div class="font-label-sm text-label-sm text-on-surface-variant/80 font-mono truncate">KEY: 0x9F4C...B288A</div></div></div></aside><div class="pl-72"><main class="w-full pt-16 bg-surface min-h-screen px-gutter py-space-lg"><div class="flex flex-col w-full gap-space-lg">
+<!-- Internal Welcome & Control Header -->
+<section class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs z-10 max-w-4xl">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Servicio Operativo • Motor Jurisprudencial Activo • SHA-256 Verificado
+        </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-mono">
+          NODE-BOG-01 // CO-LEX-FOR
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Consola de Administración y Control Forense
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Gestión unificada de contenidos dogmáticos, simuladores procesales, bandeja de requerimientos de litigio y auditoría de integridad criptográfica.
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm z-10">
+<!-- Period Selector -->
+<div class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_month</span>
+<span>Periodo: Fiscal Q2 2024</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">arrow_drop_down</span>
+</div>
+<!-- Action Button with Dropdown -->
+<div class="relative inline-block text-left" id="action-dropdown-wrapper">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:bg-primary-fixed-dim transition-all shadow-md" id="action-dropdown-btn" type="button">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+          Nuevo Contenido / Caso
+          <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<div class="hidden absolute right-0 mt-2 w-64 rounded-xl bg-surface-container-high shadow-2xl p-space-xs z-50" id="action-menu">
+<div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-mono">
+            Registrar Artefacto
+          </div>
+<a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-bright transition-colors" href="#">
+<span class="material-symbols-outlined text-primary text-[18px]">article</span>
+            Artículo Doctrinal / Blog
+          </a>
+<a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-bright transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary text-[18px]">quiz</span>
+            Caso para Simulador Judicial
+          </a>
+<a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-bright transition-colors" href="#">
+<span class="material-symbols-outlined text-tertiary text-[18px]">gavel</span>
+            Ficha Jurisprudencial / Sentencia
+          </a>
+<a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-bright transition-colors" href="#">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">school</span>
+            Recurso Académico Forense
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4-Column Operational KPIs -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-error via-primary to-primary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Bandeja Forense</span>
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">12 Activos</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">folder_supervised</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 text-error font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+            3 Flagrancia / Urgente
+          </span>
+<span class="text-on-surface-variant font-mono">9 Ordinarios</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Despacho PGP en curso de firma</span>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Simuladores &amp; Preguntas</span>
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">184 Ítems</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[24px]">model_training</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface">94% Precisión Judicatura</span>
+<span class="text-primary font-bold">8 Casos Activos</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 94%;"></div>
+</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-tertiary"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Fichas &amp; Normativa</span>
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">148 Dictámenes</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-high text-tertiary">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>4 Códigos Procesales</span>
+<span class="text-secondary font-mono">Art. 247 CGP OK</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface truncate">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Indexada hoy: Ley 2213/2024</span>
+</div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Métricas de Lectura CMS</span>
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">4,820 /mes</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">analytics</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>+28.4% vs mes previo</span>
+<span class="text-primary font-mono">1.4k unique</span>
+</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">trending_up</span>
+<span class="truncate">Top: Preservación RAM Forense</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Grid: 2/3 and 1/3 layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column (8 of 12 = 2/3) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Module A: Pericial Requerimientos Queue -->
+<section class="rounded-xl bg-surface-container-low shadow-sm flex flex-col overflow-hidden">
+<div class="p-space-md bg-surface-container flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+                Bandeja Prioritaria de Requerimientos Periciales
+              </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+                Consultas procesales cifradas con hash de custodia y plazo pericial
+              </span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+              Filtrar
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">download</span>
+              Exportar
+            </button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-lowest font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+<tr>
+<th class="py-space-sm px-space-md">Despacho / Solicitante</th>
+<th class="py-space-sm px-space-sm">Área Jurídica</th>
+<th class="py-space-sm px-space-sm">Asunto Técnico</th>
+<th class="py-space-sm px-space-sm text-center">Urgencia</th>
+<th class="py-space-sm px-space-sm">Estado</th>
+<th class="py-space-sm px-space-sm text-center">Cifrado</th>
+<th class="py-space-sm px-space-md text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Juzgado 15 Penal Circuito</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">RAD: 2024-00921-00</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-tertiary">
+                    Penal / Evidencia Digital
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="text-on-surface font-medium">Extracción WhatsApp &amp; Volcado SQLite</span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-bold uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                    Flagrancia
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="text-primary font-label-sm text-label-sm flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[14px]">autorenew</span> En Análisis
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="material-symbols-outlined text-primary text-[18px]" title="PGP 4096-bit Verified">verified_user</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors" title="Ver Expediente">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1.5 rounded bg-primary-container text-on-primary-container hover:bg-primary transition-colors" title="Responder Dictamen">
+<span class="material-symbols-outlined text-[16px]">reply</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-secondary transition-colors font-mono" title="Descargar Hash SHA-256">
+<span class="material-symbols-outlined text-[16px]">tag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors bg-surface-container-low/40">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Tribunal Sup. Bogotá - Sala Laboral</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">RAD: 2023-04112-01</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-tertiary">
+                    Laboral / Prueba Tecnológica
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="text-on-surface font-medium">Autenticidad de Correos RFC 5322 &amp; DKIM</span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-secondary font-label-sm text-label-sm font-bold uppercase">
+                    Alto
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pending_actions</span> Pendiente Dictamen
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="material-symbols-outlined text-primary text-[18px]" title="PGP 4096-bit Verified">lock</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors" title="Ver Expediente">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1.5 rounded bg-primary-container text-on-primary-container hover:bg-primary transition-colors" title="Responder Dictamen">
+<span class="material-symbols-outlined text-[16px]">reply</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-secondary transition-colors" title="Descargar Hash SHA-256">
+<span class="material-symbols-outlined text-[16px]">tag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Brigard &amp; Castro Litigantes</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">REF: BC-CYBER-88</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-tertiary">
+                    Corporativo / Prop. Intelectual
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="text-on-surface font-medium">Análisis de Exfiltración en S3 &amp; Bitácoras</span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase">
+                    Normal
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="text-primary font-label-sm text-label-sm flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[14px]">autorenew</span> En Análisis
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="material-symbols-outlined text-primary text-[18px]" title="PGP 4096-bit Verified">verified_user</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors" title="Ver Expediente">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1.5 rounded bg-primary-container text-on-primary-container hover:bg-primary transition-colors" title="Responder Dictamen">
+<span class="material-symbols-outlined text-[16px]">reply</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-secondary transition-colors" title="Descargar Hash SHA-256">
+<span class="material-symbols-outlined text-[16px]">tag</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-high/60 transition-colors bg-surface-container-low/40">
+<td class="py-space-sm px-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Juzgado 03 Civil del Circuito</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">RAD: 2024-00155-00</span>
+</div>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest text-tertiary">
+                    Civil / Comercial
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="text-on-surface font-medium">Controversia de Firma Digital Certificada</span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase">
+                    Normal
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm">
+<span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">task_alt</span> Concluido
+                  </span>
+</td>
+<td class="py-space-sm px-space-sm text-center">
+<span class="material-symbols-outlined text-primary text-[18px]" title="PGP 4096-bit Verified">verified_user</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors" title="Ver Expediente">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-highest text-on-surface-variant cursor-not-allowed" title="Archivado">
+<span class="material-symbols-outlined text-[16px]">archive</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high hover:bg-surface-bright text-secondary transition-colors" title="Descargar Hash SHA-256">
+<span class="material-symbols-outlined text-[16px]">tag</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-sm bg-surface-container-lowest flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Mostrando 4 de 12 requerimientos activos con sellado de tiempo RFC 3161</span>
+<a class="text-primary hover:underline flex items-center gap-1 font-bold" href="#">
+            Ver todas las solicitudes →
+          </a>
+</div>
+</section>
+<!-- Module B: Interactive Question & Simulator Manager -->
+<section class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+                Gestor Rápido de Simuladores &amp; Banco de Preguntas
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Evaluación técnico-jurídica para aspirantes a judicatura y peritos auxiliares
+              </p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 px-space-sm py-2 rounded-lg bg-secondary-container text-secondary hover:bg-surface-container-highest transition-colors font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+            Nuevo Módulo
+          </button>
+</div>
+<!-- Simulator Grid / List -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Item 1 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-mono">SIM-01 • HARDWARE</span>
+<h3 class="font-title-md text-title-md text-on-surface">Inspección Judicial SSD NVMe</h3>
+</div>
+<span class="px-2 py-0.5 rounded text-on-surface font-label-sm text-label-sm bg-surface-container-high">
+                42 Preguntas
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Dificultad Doctrinal</span>
+<span class="text-error font-bold">Avanzada / Forense</span>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-full h-1.5">
+<div class="bg-error h-full rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="text-primary hover:text-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span> Pregunta
+              </button>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" title="Editar Respuestas">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container-high" title="Pausar Módulo">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-mono">SIM-02 • CLOUD</span>
+<h3 class="font-title-md text-title-md text-on-surface">Cadena de Custodia AWS S3</h3>
+</div>
+<span class="px-2 py-0.5 rounded text-on-surface font-label-sm text-label-sm bg-surface-container-high">
+                36 Preguntas
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Dificultad Doctrinal</span>
+<span class="text-secondary font-bold">Media / Procedimental</span>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-full h-1.5">
+<div class="bg-secondary h-full rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="text-primary hover:text-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span> Pregunta
+              </button>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" title="Editar Respuestas">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container-high" title="Pausar Módulo">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-mono">SIM-03 • CHAT APPS</span>
+<h3 class="font-title-md text-title-md text-on-surface">Mensajes WhatsApp y Telegram</h3>
+</div>
+<span class="px-2 py-0.5 rounded text-on-surface font-label-sm text-label-sm bg-surface-container-high">
+                68 Preguntas
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Dificultad Doctrinal</span>
+<span class="text-primary font-bold">Legal / CGP Art 247</span>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-full h-1.5">
+<div class="bg-primary h-full rounded-full" style="width: 75%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="text-primary hover:text-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span> Pregunta
+              </button>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" title="Editar Respuestas">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container-high" title="Pausar Módulo">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider font-mono">SIM-04 • FINTECH</span>
+<h3 class="font-title-md text-title-md text-on-surface">Ciberdelito Bancario y Phishing</h3>
+</div>
+<span class="px-2 py-0.5 rounded text-on-surface font-label-sm text-label-sm bg-surface-container-high">
+                38 Preguntas
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Dificultad Doctrinal</span>
+<span class="text-error font-bold">Crítica / Ley 1273</span>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-full h-1.5">
+<div class="bg-error h-full rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="text-primary hover:text-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span> Pregunta
+              </button>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" title="Editar Respuestas">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container-high" title="Pausar Módulo">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column (4 of 12 = 1/3) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Module C: Quick CMS Access -->
+<section class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">post_add</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">CMS &amp; Publicaciones</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">DRAFT / LIVE</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Article 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-mono">CIBERSEGURIDAD</span>
+<!-- Toggle switch simulation -->
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Publicado
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface line-clamp-2">
+              Preservación Volátil de Memoria RAM en Servidores GNU/Linux ante Incidente Ransomware
+            </h4>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>18 May 2024 • 9 min</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">edit</span> Editar
+              </button>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-mono">EXP. ACADÉMICAS</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                Borrador
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface line-clamp-2">
+              Metodología de Valoración Judicial de Evidencia Criptográfica en Audiencia Concentrada
+            </h4>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>Actualizado hace 3 hrs</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">edit</span> Continuar
+              </button>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-mono">JURISPRUDENCIA</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Publicado
+              </span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface line-clamp-2">
+              Análisis Crítico de la Sentencia CSJ SP-1284: Validez Probatoria de Capturas de Pantalla
+            </h4>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>12 May 2024 • 14 min</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">edit</span> Editar
+              </button>
+</div>
+</div>
+</div>
+<a class="w-full py-2 rounded-lg bg-surface-container-highest text-center text-on-surface font-label-md text-label-md hover:bg-surface-bright transition-colors" href="#">
+          Gestionar Catálogo Completo (CMS)
+        </a>
+</section>
+<!-- Module D: Real-Time Forensics Syslog (SHA-256) -->
+<section class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Auditoría Syslog</h2>
+</div>
+<span class="flex items-center gap-1 font-mono font-label-sm text-label-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+            LIVE FEED
+          </span>
+</div>
+<!-- Terminal Panel -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest font-mono text-[12px] leading-relaxed text-on-surface-variant flex flex-col gap-2 overflow-y-auto max-h-72">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-primary">
+<span class="text-tertiary">[14:32:01]</span>
+<span class="font-bold">ROOT AUTH:</span>
+<span>Token JWT renovado con éxito.</span>
+</div>
+<span class="text-[10px] text-outline opacity-80 truncate pl-4">SIG: 0x9e88b... RSA-PSS 4096</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="text-tertiary">[12:15:40]</span>
+<span class="font-bold text-secondary">SENTENCIA INDEXADA:</span>
+<span>SP-1284-2023 vinculada a CGP Art. 247.</span>
+</div>
+<span class="text-[10px] text-outline opacity-80 truncate pl-4">HASH: 4b2f18...d4e9c7</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-error">
+<span class="text-tertiary">[09:44:12]</span>
+<span class="font-bold">BANDEJA ENCRIPTADA:</span>
+<span>Nuevo requerimiento de Juzgado 15 Penal Circuito.</span>
+</div>
+<span class="text-[10px] text-outline opacity-80 truncate pl-4">STATUS: PGP ENCRYPTED / FLAGRANCIA</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="text-tertiary">[08:10:05]</span>
+<span class="font-bold text-primary">INTEGRITY CHECK:</span>
+<span>Hash de verificación del portal 8f3c7a9e102d... OK.</span>
+</div>
+<span class="text-[10px] text-outline opacity-80 truncate pl-4">VERIFY PASS (Merkle root verified)</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="text-tertiary">[06:00:00]</span>
+<span class="font-bold text-tertiary">CRON SNAPSHOT:</span>
+<span>Backup encriptado en frío S3 Glacier completado.</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>Buffer: 2,048 entradas seguras</span>
+<a class="text-primary hover:underline font-mono" href="#">Descargar Log .JSON</a>
+</div>
+</section>
+</div>
+</div>
+<!-- Operational Bottom Bar / Forensics Status Footer -->
+<footer class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex flex-wrap items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">hard_drive</span>
+<span>Almacenamiento Cifrado (LUKS): <strong class="text-on-surface font-mono">1.4 TB / 4.0 TB (35%)</strong></span>
+</div>
+<div class="hidden sm:block text-outline">•</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>CMS Forense <strong class="text-on-surface font-mono">v3.8.4 Enterprise</strong></span>
+</div>
+<div class="hidden sm:block text-outline">•</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">lock_clock</span>
+<span>Cadena HSM: <strong class="text-primary font-mono">Sincronizada</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-primary text-[18px]">cloud_sync</span>
+        Respaldar Base de Datos Forense
+      </button>
+</div>
+</footer>
+</div>
+<script>
+  (function () {
+    const dropdownBtn = document.getElementById('action-dropdown-btn');
+    const dropdownMenu = document.getElementById('action-menu');
+
+    if (dropdownBtn && dropdownMenu) {
+      dropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!dropdownMenu.contains(e.target) && !dropdownBtn.contains(e.target)) {
+          dropdownMenu.classList.add('hidden');
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>

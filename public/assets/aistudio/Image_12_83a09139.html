@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#233144", "tertiary": "#b9c7e0", "primary-container": "#10b981", "surface-container-lowest": "#020e21", "error": "#ffb4ab", "secondary": "#95d4ac", "tertiary-container": "#95a4bb", "surface-container-high": "#1d2a3e", "outline": "#86948a", "on-tertiary-container": "#2c3a4e", "surface-bright": "#2d3a4e", "surface-tint": "#4edea3", "primary-fixed": "#6ffbbe", "outline-variant": "#3c4a42", "on-secondary-fixed": "#002111", "background": "#061426", "inverse-primary": "#006c49", "error-container": "#93000a", "on-primary": "#003824", "on-secondary": "#003920", "on-primary-container": "#00422b", "on-error-container": "#ffdad6", "secondary-fixed-dim": "#95d4ac", "on-background": "#d6e3fe", "inverse-on-surface": "#243145", "on-tertiary-fixed": "#0d1c2f", "surface-container-highest": "#28354a", "tertiary-fixed-dim": "#b9c7e0", "on-tertiary-fixed-variant": "#3a485c", "tertiary-fixed": "#d5e3fd", "secondary-container": "#0f5132", "surface-dim": "#061426", "primary-fixed-dim": "#4edea3", "surface": "#061426", "on-secondary-fixed-variant": "#0f5132", "on-surface-variant": "#bbcabf", "on-secondary-container": "#84c39b", "inverse-surface": "#d6e3fe", "surface-variant": "#28354a", "on-primary-fixed": "#002113", "on-error": "#690005", "secondary-fixed": "#b0f1c7", "on-primary-fixed-variant": "#005236", "on-surface": "#d6e3fe", "surface-container-low": "#0e1c2f", "surface-container": "#132033", "primary": "#4edea3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-sm": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-lg-mobile": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "display": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "display-mobile": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "display": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "label-md": [ "13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-[0_0_15px_rgba(16,185,129,0.15)]"><span class="material-symbols-outlined text-[24px]">verified_user</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">JEYSON TORRES T.</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">INGENIERÍA FORENSE &amp; DERECHO</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-space-xs bg-surface-container-lowest rounded-xl" data-active-classes="bg-surface-container-high text-primary font-title-md rounded-xl shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)]"><a class="font-title-md text-title-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="perfil" href="#">Perfil</a><a class="font-title-md text-title-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="ciberseguridad" href="#">Ciberseguridad</a><a class="font-title-md text-title-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="rincon-normativo" href="#">Rincón Normativo</a><a class="font-title-md text-title-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="analisis-juridico" href="#">Análisis Jurídico</a><a aria-current="page" class="px-space-md py-space-sm transition-all bg-surface-container-high text-primary font-title-md rounded-xl shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)]" data-path="simuladores" href="#">Simuladores</a></nav><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs bg-primary-container hover:bg-secondary-container text-on-primary font-title-md text-title-md px-space-md py-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(16,185,129,0.3)] transition-all" data-path="admin-portal" href="#"><span class="material-symbols-outlined text-[18px]">shield_lock</span><span>Admin</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Interactive Top Atmosphere / Banner Strip -->
+<div class="relative w-full overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/10 via-surface-container-high/40 to-transparent pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin pt-space-xl pb-space-lg relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-gutter">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>ENTORNO DE SIMULACIÓN PROCESAL • V3.8 ACTIVADO</span>
+</div>
+<h1 class="font-display text-display text-on-surface tracking-tight">Simuladores &amp; Práctica Procesal Interactiva</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Plataforma de entrenamiento gamificado para la resolución de casos de evidencia digital, derecho probatorio y evaluación de concursos de méritos.
+        </p>
+</div>
+<!-- Quick Session Status Chips -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<span class="material-symbols-outlined text-primary text-[20px]">encrypted</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MOTOR JURISPRUDENCIAL</span>
+<span class="font-title-md text-title-md text-primary font-bold">Activo • Ley 527 &amp; ISO 27037</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric Dashboard Strip (User Real-Time Progress) -->
+<div class="w-full bg-surface-container-low py-space-md">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-xl shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">local_fire_department</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Racha Actual</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold" id="streak-counter">14</span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">Días Consecutivos</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-xl shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">fact_check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Precisión Probatoria</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-secondary font-extrabold">92.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Percentil 98</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-xl shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[26px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Simulacros Ejecutados</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold">38</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">de 45 Disponibles</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-xl shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[26px]">gavel</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Calificación Rama Jud.</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">870/1000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Apto Fiscal/Juez</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Simulator Layout: Two-Column Workbench -->
+<div class="max-w-[1440px] mx-auto w-full px-margin-mobile md:px-margin py-space-xl">
+<!-- Mode Switcher Tabs (Large, Tactile, High Hierarchy) -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-gutter pb-space-lg">
+<div class="inline-flex p-space-xs bg-surface-container-lowest rounded-xl">
+<button class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-title-md text-title-md bg-surface-container-high text-primary shadow-sm transition-all" id="tab-derecho" onclick="switchMode('derecho')">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+<span>Estudiantes de Derecho y Judicatura</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" id="tab-concursos" onclick="switchMode('concursos')">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+<span>Concursos de Méritos</span>
+</button>
+</div>
+<div class="flex items-center gap-space-md self-start sm:self-auto">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MODALIDAD SELECCIONADA:</span>
+<span class="px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm uppercase tracking-wide" id="active-badge">
+          Doctrina &amp; Casos Prácticos
+        </span>
+</div>
+</div>
+<!-- 12-Column Responsive Matrix -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Primary Left Column: The Interactive Workbench (8 Columns) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Live Case Console Card -->
+<div class="bg-surface-container rounded-xl shadow-xl overflow-hidden flex flex-col">
+<!-- Top Accent Forensic Rail -->
+<div class="h-1 w-full bg-gradient-to-r from-primary via-secondary to-primary-container"></div>
+<!-- Card Header & Metadata Info-Strip -->
+<div class="p-space-lg bg-surface-container-high/60 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-space-xs rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-mono tracking-wider">
+                EXP-FOR-2025-04
+              </span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">
+                Inspección Judicial • Incautación Tecnológica
+              </span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">timer</span>
+<span class="font-mono text-on-surface font-bold" id="timer-display">04:42</span>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm uppercase">
+                Dificultad: Alta
+              </span>
+</div>
+</div>
+<!-- Question Content Box -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary flex-shrink-0">
+<span class="font-headline-sm text-headline-sm font-extrabold">04</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Pregunta de Cadena de Custodia &amp; Extracción Digital</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-snug">
+                  En una diligencia de allanamiento e inspección judicial se incauta un equipo informático dotado de un disco de estado sólido (SSD NVMe) en pleno funcionamiento y conectado a red. ¿Cuál es el procedimiento técnico pericial idóneo para salvaguardar la memoria volátil y mitigar la corrupción por TRIM sin vulnerar el régimen probatorio?
+                </h2>
+</div>
+</div>
+<!-- Case Scenario Visual Aid -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl flex items-center justify-between gap-space-md flex-wrap">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-tertiary text-[28px]">memory</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-medium">Volatile RAM Dump • Algoritmo Wear Leveling &amp; Garbage Collection</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-mono">Hash pre-operacional: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</span>
+</div>
+</div>
+<span class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase">
+                RFC 3227 compliant
+              </span>
+</div>
+<!-- Radio Options List -->
+<div class="flex flex-col gap-space-sm mt-space-sm" id="options-group">
+<!-- Option A -->
+<label class="group relative flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-all cursor-pointer">
+<input class="mt-1 w-4 h-4 text-primary bg-surface-container border-outline-variant focus:ring-primary focus:ring-offset-surface-container-lowest" name="forensic_case" type="radio" value="A"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">
+                    A. Proceder al desenchufe intempestivo de la red eléctrica ("Hard Shutdown") de inmediato para congelar la máquina y precintar el conector con faja numerada.
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Enfoque conservador de hardware analógico sin adquisición de datos en caliente.
+                  </span>
+</div>
+</label>
+<!-- Option B (Correct) -->
+<label class="group relative flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-all cursor-pointer">
+<input class="mt-1 w-4 h-4 text-primary bg-surface-container border-outline-variant focus:ring-primary focus:ring-offset-surface-container-lowest" name="forensic_case" type="radio" value="B"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">
+                    B. Aislar la red (modo avión / desconexión física de cable RJ45), volcar de inmediato la memoria RAM mediante dispositivo USB forense de solo lectura y apagar mediante comando forzado o desconexión preservando estado para evitar auto-borrado TRIM activo.
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Preserva artefactos en RAM (claves de cifrado BitLocker/VeraCrypt) y previene la reorganización interna del controlador SSD.
+                  </span>
+</div>
+</label>
+<!-- Option C -->
+<label class="group relative flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-all cursor-pointer">
+<input class="mt-1 w-4 h-4 text-primary bg-surface-container border-outline-variant focus:ring-primary focus:ring-offset-surface-container-lowest" name="forensic_case" type="radio" value="C"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">
+                    C. Efectuar un apagado normal del sistema operativo a través del menú de inicio para permitir que los registros del File System (NTFS/EXT4) sincronicen ordenadamente.
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Cierre operativo estándar del sistema de archivos.
+                  </span>
+</div>
+</label>
+<!-- Option D -->
+<label class="group relative flex items-start gap-space-md p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-high transition-all cursor-pointer">
+<input class="mt-1 w-4 h-4 text-primary bg-surface-container border-outline-variant focus:ring-primary focus:ring-offset-surface-container-lowest" name="forensic_case" type="radio" value="D"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface group-hover:text-primary transition-colors">
+                    D. Iniciar una clonación física bit a bit directa del disco en caliente a través de conexión Gigabit de red compartida hacia el servidor del perito.
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Clonación remota en tiempo de ejecución sin bloqueo de escrituras.
+                  </span>
+</div>
+</label>
+</div>
+<!-- Action Controls -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Resolución amparada en estándar pericial internacional</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" onclick="resetForm()" type="button">
+                  Reiniciar Caso
+                </button>
+<button class="flex-1 sm:flex-initial flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-bold px-space-lg py-space-sm rounded-xl shadow-lg shadow-primary/20 transition-all" id="validate-btn" onclick="validateAnswer()" type="button">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Validar Respuesta con Fundamento Doctrinal</span>
+</button>
+</div>
+</div>
+<!-- Expanded Jurisprudential & Doctrinal Feedback Panel (Initially hidden or revealed upon click) -->
+<div class="hidden flex-col gap-space-md p-space-lg bg-surface-container-lowest rounded-xl shadow-md mt-space-md" id="feedback-panel">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+<span class="font-headline-sm text-headline-sm font-bold">¡Dictamen Pericial Correcto! (Opción B)</span>
+</div>
+<span class="px-space-sm py-space-xs rounded bg-secondary-container text-primary font-label-sm text-label-sm font-bold uppercase">
+                  Puntaje: +100 Pts
+                </span>
+</div>
+<!-- Technical & Doctrinal Breakdown Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter pt-space-xs">
+<!-- ISO 27037 Standard Foundation -->
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container-high/50 rounded-lg">
+<div class="flex items-center gap-space-xs text-primary font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">policy</span>
+<span>Fundamento Técnico ISO/IEC 27037</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    La norma internacional para la <em>"Identificación, recolección, adquisición y preservación de evidencia digital"</em> estipula que ante dispositivos encendidos debe ponderarse la regla de volatilidad (RFC 3227). La memoria RAM contiene sesiones abiertas, llaves criptográficas transitorias e hilos de ejecución activos que se disipan instantáneamente al cortar la corriente. En discos SSD, el comando <strong>TRIM</strong> activa recolección de basura asincrónica que sobreescribe bloques liberados con ceros, haciendo irrecuperable la evidencia si el OS continúa operando sin contención pericial.
+                  </p>
+</div>
+<!-- Judicial Jurisprudence & Criminal Procedure Foundation -->
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container-high/50 rounded-lg">
+<div class="flex items-center gap-space-xs text-secondary font-title-md text-title-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">balance</span>
+<span>Jurisprudencia &amp; Legalidad Probatoria</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                    Conforme al criterio de la <strong>Corte Suprema de Justicia (Sala de Casación Penal)</strong> y el principio de mismidad probatoria: la extracción pericial en caliente no vulnera la autenticidad siempre que se registre la metodología, el hardware forense de solo lectura empleado y se acredite el cálculo de Hash (SHA-256) antes y después del procedimiento. Un apagado rutinario altera registros temporales de acceso (<code class="font-mono text-tertiary">MACB timestamps</code>) destruyendo la fiabilidad procesal exigida en el juicio oral.
+                  </p>
+</div>
+</div>
+<!-- Monospaced Forensic Chain Metadata Record -->
+<div class="flex flex-col gap-space-xs p-space-sm bg-surface-container rounded-lg font-mono text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between text-label-sm">
+<span class="text-primary font-bold">REGISTRO DE CUSTODIA DIGITAL EMITIDO:</span>
+<span class="text-tertiary">STAMP: 2025-05-18T14:32:09.112Z</span>
+</div>
+<div class="truncate text-on-surface">
+                  MEM_HASH_DUMP: d2a98f12d4d86b9766d7e0081d0be6e1388656645314f3b259d6e812d45a9e32
+                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Section: Quick Multi-Disciplinary Scenario Library -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Módulos de Simulación Disponibles</h3>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Plan Académico 2025</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Scenario 1 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between gap-space-sm shadow-md hover:bg-surface-container-high transition-all cursor-pointer">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-xs rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold">SIM-01</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">terminal</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Cadena de Custodia en Cloud &amp; AWS S3</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Legalidad de incautación telemática remota y hashes criptográficos de buckets multirregionales.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-body-sm text-body-sm text-tertiary">
+<span>12 Preguntas</span>
+<span class="flex items-center text-primary font-bold">Iniciar →</span>
+</div>
+</div>
+<!-- Scenario 2 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between gap-space-sm shadow-md hover:bg-surface-container-high transition-all cursor-pointer">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-xs rounded bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-semibold">SIM-02</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">chat</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Mensajes de WhatsApp y Telegram</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Cotejo de capturas de pantalla vs. extracciones forenses UFED / Cellebrite ante el juez.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-body-sm text-body-sm text-secondary">
+<span>15 Preguntas</span>
+<span class="flex items-center text-secondary font-bold">Iniciar →</span>
+</div>
+</div>
+<!-- Scenario 3 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between gap-space-sm shadow-md hover:bg-surface-container-high transition-all cursor-pointer">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-space-xs rounded bg-surface-container-lowest text-tertiary font-label-sm text-label-sm font-semibold">SIM-03</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">bug_report</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Ciberdelito Bancario (Ley 1273/09)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Intercepción ilícita de redes financieras y configuración típica de obstaculización ilegítima.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-body-sm text-body-sm text-tertiary">
+<span>18 Preguntas</span>
+<span class="flex items-center text-primary font-bold">Iniciar →</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sidebar Analytics, Mode Info & Academic Support Banner (4 Columns) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Mode Information Card -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">school</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Objetivo Didáctico del Módulo</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="mode-desc">
+            Diseñado para abogados, jueces, litigantes y alumnos de derecho probatorio. Cada decisión técnica cuenta con retroalimentación doctrinaria, citas del Código General del Proceso (CGP), Ley 906 de 2004 y jurisprudencia especializada de la Corte Suprema.
+          </p>
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container-lowest rounded-xl">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Cobertura Temática:</span>
+<span class="text-primary font-semibold">98.5% Normativo</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Áreas Evaluadas en Sesión</span>
+<div class="flex flex-wrap gap-space-xs mt-1">
+<span class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Cadena de Custodia</span>
+<span class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Extracción Volátil</span>
+<span class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Cotejo Criptográfico</span>
+<span class="px-space-sm py-space-xs rounded bg-surface-container-high text-on-surface font-body-sm text-body-sm">Régimen Probatorio</span>
+</div>
+</div>
+</div>
+<!-- Performance Percentile Breakdown Visual -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col gap-space-md shadow-lg">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Percentil de Rendimiento</span>
+<span class="material-symbols-outlined text-primary text-[20px]">analytics</span>
+</div>
+<!-- Inline SVG Percentile Bell-Curve / Performance Visual -->
+<div class="w-full h-32 flex items-center justify-center bg-surface-container-lowest rounded-xl p-space-sm relative overflow-hidden">
+<svg class="w-full h-full text-primary" fill="none" stroke="currentColor" viewbox="0 0 300 100">
+<!-- Normal Distribution / Percentile Curve -->
+<path class="stroke-primary" d="M 10 90 Q 75 90, 110 65 Q 150 10, 190 65 Q 225 90, 290 90" fill="none" stroke-width="2.5"></path>
+<!-- User Position Highlight Line -->
+<line class="stroke-secondary" stroke="currentColor" stroke-dasharray="3 3" stroke-width="2" x1="225" x2="225" y1="20" y2="90"></line>
+<!-- Highlight Area Fill under curve -->
+<path class="text-primary/20" d="M 225 78 Q 240 90, 290 90 L 225 90 Z" fill="currentColor"></path>
+<!-- Target Pip -->
+<circle class="fill-primary" cx="225" cy="78" r="4.5"></circle>
+</svg>
+<div class="absolute top-2 right-3 flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-secondary font-bold">SUPERIOR AL 94%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-mono">Top Concursantes</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Resolución Técnica Pericial:</span>
+<span class="text-primary font-bold">96%</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Sustentación Constitucional:</span>
+<span class="text-secondary font-bold">89%</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Velocidad de Respuesta:</span>
+<span class="text-on-surface font-bold">1m 18s / ítem</span>
+</div>
+</div>
+</div>
+<!-- BANNER INTEGRADO DESTACADO DE APOYO ACADÉMICO -->
+<div class="relative overflow-hidden rounded-xl bg-secondary-container/30 p-space-lg shadow-xl flex flex-col gap-space-md">
+<!-- Background Ambient Flare -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-primary/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-space-md relative z-10">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[28px]">local_library</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">
+                MATERIAL PEDAGÓGICO ABIERTO
+              </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">
+                ¿Preparándote para una materia o evaluación jurídica?
+              </h3>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant relative z-10 leading-relaxed">
+            Consulta mis apuntes de clase, diapositivas completas de ponencias y memorias de proyectos de aula interdisciplinarios en el repositorio abierto.
+          </p>
+<div class="pt-space-xs relative z-10">
+<a class="w-full flex items-center justify-center gap-space-sm bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-bold px-space-lg py-space-md rounded-xl shadow-lg shadow-primary/20 transition-all group" data-path="experiencias-academicas" href="#">
+<span>Explorar Recursos Académicos</span>
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Academic Seal Watermark -->
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant relative z-10">
+<span class="material-symbols-outlined text-primary text-[16px]">verified_user</span>
+<span>Repositorio indexado: Derecho Procesal &amp; Evidencia Digital</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Logic for Simulation Tabs and Instant Validation -->
+<script>
+    function switchMode(mode) {
+      const tabDerecho = document.getElementById('tab-derecho');
+      const tabConcursos = document.getElementById('tab-concursos');
+      const activeBadge = document.getElementById('active-badge');
+      const modeDesc = document.getElementById('mode-desc');
+
+      if (mode === 'concursos') {
+        tabConcursos.className = 'flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-title-md text-title-md bg-surface-container-high text-primary shadow-sm transition-all';
+        tabDerecho.className = 'flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all';
+        activeBadge.textContent = 'Rama Judicial & Fiscalía General (Concursos)';
+        activeBadge.className = 'px-space-sm py-space-xs rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wide';
+        modeDesc.textContent = 'Simulación estricta con cronómetro en tiempo real homologado a convocatorias de la Rama Judicial, Fiscalía y Procuraduría General de la Nación. Ponderación percentil instantánea.';
+      } else {
+        tabDerecho.className = 'flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-title-md text-title-md bg-surface-container-high text-primary shadow-sm transition-all';
+        tabConcursos.className = 'flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-title-md text-title-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all';
+        activeBadge.textContent = 'Doctrina & Casos Prácticos';
+        activeBadge.className = 'px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm uppercase tracking-wide';
+        modeDesc.textContent = 'Diseñado para abogados, jueces, litigantes y alumnos de derecho probatorio. Cada decisión técnica cuenta con retroalimentación doctrinaria, citas del CGP, Ley 906 y jurisprudencia penal.';
+      }
+    }
+
+    function validateAnswer() {
+      const radios = document.getElementsByName('forensic_case');
+      let selectedValue = null;
+      for (const radio of radios) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      const feedback = document.getElementById('feedback-panel');
+      const validateBtn = document.getElementById('validate-btn');
+
+      if (!selectedValue) {
+        alert('Por favor selecciona una alternativa pericial para validar el dictamen.');
+        return;
+      }
+
+      feedback.classList.remove('hidden');
+      feedback.classList.add('flex');
+
+      // Scroll smoothly to the feedback section
+      feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      validateBtn.classList.remove('bg-primary');
+      validateBtn.classList.add('bg-secondary-container', 'text-primary');
+      validateBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>Dictamen Cotejado</span>';
+    }
+
+    function resetForm() {
+      const radios = document.getElementsByName('forensic_case');
+      for (const radio of radios) {
+        radio.checked = false;
+      }
+      const feedback = document.getElementById('feedback-panel');
+      const validateBtn = document.getElementById('validate-btn');
+
+      feedback.classList.add('hidden');
+      feedback.classList.remove('flex');
+
+      validateBtn.className = 'flex-1 sm:flex-initial flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-bold px-space-lg py-space-sm rounded-xl shadow-lg shadow-primary/20 transition-all';
+      validateBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">gavel</span><span>Validar Respuesta con Fundamento Doctrinal</span>';
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest mt-auto"><div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin py-space-xl flex flex-col gap-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter"><div class="md:col-span-6 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">security</span><span class="font-headline-sm text-headline-sm text-on-surface">JEYSON TORRES TORRES</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Ingeniero de Sistemas • Investigador Judicial • Estudiante de Derecho. Práctica especializada en informática forense, preservación de cadena de custodia digital, auditoría de vulnerabilidades y argumentación probatoria en litigio tecnológico.</p><div class="flex items-center gap-space-sm mt-space-xs"><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary-container text-primary font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span>INTEGRIDAD FORENSE SHA-256 VERIFICADA</span></div></div></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Repositorio Institucional</span><nav class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Dictámenes Periciales</a><a class="hover:text-primary transition-colors" href="#">Cadena de Custodia Digital</a><a class="hover:text-primary transition-colors" href="#">Protocolos RFC 3227 &amp; ISO 27037</a><a class="hover:text-primary transition-colors" href="#">Artículos de Doctrina Informática</a></nav></div><div class="md:col-span-3 flex flex-col gap-space-sm"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Aviso Pericial &amp; Normativo</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Los análisis técnicos, dictámenes y simulaciones expuestos se estructuran conforme al principio de legalidad probatoria. Las opiniones constituyen criterio consultivo no vinculante sin previo nombramiento judicial.</p></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-lg"><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">© 2025 Jeyson Torres Torres. Todos los derechos reservados.</p><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">lock</span><span>Entorno Criptográfico Resguardado</span></span><span class="hidden md:inline text-outline-variant">•</span><span>CO Bar &amp; Forensic Registry</span></div></div></div></footer></body></html>
